@@ -14,7 +14,7 @@ function App() {
     >
       <Router>
         <Navbar />
-        <div className="grow w-10/12 ml-auto mr-auto bg-white">
+        <div className="grow w-full md:w-10/12 ml-auto mr-auto bg-white">
           <Routes>
             <Route path="/" element={<Homepage />} />
             <Route path="/about" element={<About />} />
