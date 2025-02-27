@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { bgDarthStripe } from "../../images";
+import { bgDarthStripe, iconGithub, iconLinkedin } from "../../images";
 
 const Navbar = () => {
   const [currentTab, setCurrentTab] = useState("Homepage");
+  const [playFade, setPlayFade] = useState(false);
   const tabs = [
     { name: "About", link: "/about" },
     { name: "Projects", link: "/projects" },
@@ -11,25 +12,51 @@ const Navbar = () => {
     { name: "Contact", link: "/contact" },
   ];
 
+  const socials = [
+    { link: "https://github.com/nshaw973", icon: iconGithub },
+    { link: "https://www.linkedin.com", icon: iconLinkedin },
+  ];
+
+  useEffect(() => {
+    setPlayFade(true);
+    setTimeout(() => {
+      setPlayFade(false);
+    }, 500);
+  }, [currentTab]);
+
   return (
     <>
-      <Link to={"/"} className="bg-white flex flex-start">
-        Nathan Shaw
-      </Link>
       {/* Tabs */}
-      <nav
-        className="bg-blue-600 text-white"
+      <div
+        className="bg-slate-700 text-white flex flex-row justify-between h-fit p-2 w-full"
         style={{
           backgroundImage: `url(${bgDarthStripe})`,
         }}
       >
-        <ul className="flex flex-row w-1/2 ml-auto mr-auto">
+        <Link to="/" className="m-auto ml-2 font-bold">
+          Nathan Shaw - 2025
+        </Link>
+        <div className="flex flex-row ml-auto">
+          {socials.map((social, index) => (
+            <Link to={social.link} target="_blank" rel="noreferrer">
+              <img
+                src={social.icon}
+                className="h-6 w-6 m-2 invert hover:invert-0"
+                alt={index}
+              />
+            </Link>
+          ))}
+        </div>
+        <br></br>
+      </div>
+      <nav>
+        <div className="flex flex-row w-full justify-end text-sm">
           {tabs.map((tab, index) => {
             return (
               <Link
                 to={tab.link}
-                className={`w-1/3 m-1 border-b-2 text-black bg-white hover:border-black rounded-xl
-                    ${currentTab === tab.name && "font-bold"}
+                className={`m-1 p-1 text-white w-18
+                    ${currentTab === tab.name && "font-bold border-b-2"}
                     `}
                 value={tab.name}
                 onClick={() => setCurrentTab(tab.name)}
@@ -39,7 +66,18 @@ const Navbar = () => {
               </Link>
             );
           })}
-        </ul>
+        </div>
+        <h1
+          className={`w-1/3 bg-slate-700 text-white text-xl font-bold shadow-xl ${
+            playFade &&
+            "animate-fade-right animate-duration-500 animate-ease-out"
+          }`}
+          style={{
+            backgroundImage: bgDarthStripe,
+          }}
+        >
+          {currentTab}
+        </h1>
       </nav>
     </>
   );
