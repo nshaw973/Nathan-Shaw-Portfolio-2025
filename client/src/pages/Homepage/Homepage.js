@@ -12,11 +12,11 @@ const Homepage = () => {
             backgroundImage: `url(${bgVsCode})`,
           }}
         ></div>
-        <div className="bg-glass text-white text-xl absolute left-1/2 bottom-1/2">
-          <h1 className="animate-fade-left animate-duration-1000 border-b-2">
+        <div className="bg-glass text-white text-xl absolute left-1/2 top-1/3 font-roboto w-fit">
+          <h1 className="animate-fade-left text-4xl md:text-6xl xl:text-8xl animate-duration-1000 border-b-2">
             Nathan Shaw
           </h1>
-          <h1 className="animate-fade-up animate-delay-1000">
+          <h1 className="animate-fade-up animate-delay-1000 text-md sm:text-xl">
             Hello, and Welcome to my Porfolio!
           </h1>
           <Link
