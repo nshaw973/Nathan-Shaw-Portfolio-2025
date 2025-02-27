@@ -13,10 +13,13 @@ const Homepage = () => {
           }}
         ></div>
         <div className="bg-glass text-white text-xl absolute left-1/2 top-1/3 font-roboto w-fit">
-          <h1 className="animate-fade-left text-4xl md:text-6xl xl:text-8xl animate-duration-1000 border-b-2">
+          <h1 className="animate-fade-left text-4xl md:text-6xl xl:text-8xl animate-duration-1000 border-b-2"
+                style={{
+                  fontSize: "clamp(2rem, 7vw, 9rem)", // Min: 1.5rem, Dynamic: 5vw, Max: 3rem
+                }}>
             Nathan Shaw
           </h1>
-          <h1 className="animate-fade-up animate-delay-1000 text-md sm:text-xl">
+          <h1 className="animate-fade-up animate-delay-1000 text-sm">
             Hello, and Welcome to my Porfolio!
           </h1>
           <Link
