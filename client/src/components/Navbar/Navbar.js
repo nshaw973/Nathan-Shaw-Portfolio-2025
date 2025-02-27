@@ -42,7 +42,7 @@ const Navbar = () => {
           backgroundImage: `url(${bgDarthStripe})`,
         }}
       >
-        <Link to="/" className="m-auto ml-2 font-bold" onClick={() => setCurrentTab("Homepage")}>
+        <Link to="/" className="m-auto ml-2 font-bold">
           Nathan Shaw - 2025
         </Link>
         <div className="flex flex-row ml-auto">
@@ -64,7 +64,7 @@ const Navbar = () => {
             return (
               <Link
                 to={tab.link}
-                className={`m-1 p-1 text-white w-18
+                className={`m-1 p-1 text-white w-24
                     ${currentTab === tab.name && "font-bold border-b-2"}
                     `}
                 value={tab.name}
