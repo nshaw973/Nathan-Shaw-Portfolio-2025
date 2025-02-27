@@ -5,7 +5,6 @@ import { projectList } from "./projectList";
 const Projects = () => {
   return (
     <>
-      <h1>Projects</h1>
       <div className="flex flex-wrap">
       {projectList.map((project, index) => {
         return (

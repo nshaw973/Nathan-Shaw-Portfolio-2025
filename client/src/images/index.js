@@ -1,3 +1,7 @@
-import bgDarthStripe from './background/darth-stripe.png'
+// Background Texture
+import bgDarthStripe from "./background/darth-stripe.png";
+// Icons
+import iconGithub from "./icons/iconGithub.svg";
+import iconLinkedin from "./icons/iconLinkedin.svg";
 
-export {bgDarthStripe}
+export { bgDarthStripe, iconGithub, iconLinkedin };
