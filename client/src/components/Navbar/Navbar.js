@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { bgDarthStripe, iconGithub, iconLinkedin } from "../../images";
 
 const Navbar = () => {
   const [currentTab, setCurrentTab] = useState("Homepage");
   const [playFade, setPlayFade] = useState(false);
+  const location = useLocation()
+  const path = location.pathname
   const tabs = [
     { name: "About", link: "/about" },
     { name: "Projects", link: "/projects" },
@@ -18,11 +20,18 @@ const Navbar = () => {
   ];
 
   useEffect(() => {
+    const matchedTab = tabs.find((tab) => tab.link === path);
+    if (matchedTab) {
+      setCurrentTab(matchedTab.name);
+    } else {
+      setCurrentTab("Homepage");
+    }
+    // Trigger the fade animation
     setPlayFade(true);
     setTimeout(() => {
       setPlayFade(false);
     }, 500);
-  }, [currentTab]);
+  }, [path]);
 
   return (
     <>
@@ -33,7 +42,7 @@ const Navbar = () => {
           backgroundImage: `url(${bgDarthStripe})`,
         }}
       >
-        <Link to="/" className="m-auto ml-2 font-bold">
+        <Link to="/" className="m-auto ml-2 font-bold" onClick={() => setCurrentTab("Homepage")}>
           Nathan Shaw - 2025
         </Link>
         <div className="flex flex-row ml-auto">
