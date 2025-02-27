@@ -42,7 +42,7 @@ const Navbar = () => {
           backgroundImage: `url(${bgDarthStripe})`,
         }}
       >
-        <Link to="/" className="m-auto ml-2 font-bold">
+        <Link to="/" className="m-auto ml-2 font-bold hover:invert">
           Nathan Shaw - 2025
         </Link>
         <div className="flex flex-row ml-auto">
@@ -64,7 +64,7 @@ const Navbar = () => {
             return (
               <Link
                 to={tab.link}
-                className={`m-1 p-1 text-white w-24
+                className={`m-1 p-1 text-white w-24 hover:font-bold
                     ${currentTab === tab.name && "font-bold border-b-2"}
                     `}
                 value={tab.name}
@@ -82,7 +82,7 @@ const Navbar = () => {
             "animate-fade-right animate-duration-500 animate-ease-out"
           }`}
           style={{
-            backgroundImage: bgDarthStripe,
+            backgroundImage: `url(${bgDarthStripe})`,
           }}
         >
           {currentTab}

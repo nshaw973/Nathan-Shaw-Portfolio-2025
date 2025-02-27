@@ -1,4 +1,5 @@
 import { coverDiscordBot, coverGIF, coverTCGSite, coverLinks } from "./images";
+const defaultImage = "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"
 export const projectList = [
   {
     title: "Google Inventory Feed",
@@ -14,7 +15,7 @@ export const projectList = [
         link: "https://aeromobility-google-feed-a4ffa84ce559.herokuapp.com/",
       },
     ],
-    image: coverGIF,
+    image: coverGIF || defaultImage,
   },
   {
     title: "TCG Discord Bot",
@@ -23,7 +24,7 @@ export const projectList = [
     links: [
       { site: "Github", link: "https://github.com/nshaw973/MyDiscord-Bot" },
     ],
-    image: coverDiscordBot,
+    image: coverDiscordBot || defaultImage,
   },
   {
     title: "TCG Collection Site",
@@ -36,7 +37,7 @@ export const projectList = [
         link: "https://discord-tcg-bot-app-83248ef6c529.herokuapp.com/",
       },
     ],
-    image: coverTCGSite,
+    image: coverTCGSite || defaultImage,
   },
   {
     title: "Aero Mobility Social Links",
@@ -46,7 +47,7 @@ export const projectList = [
       { site: "Github", link: "https://github.com/aeromobility/links" },
       { site: "Site", link: "https://aeromobility.github.io/links/" },
     ],
-    image: coverLinks,
+    image: coverLinks || defaultImage,
   },
   {
     title: "Connected",
@@ -56,6 +57,6 @@ export const projectList = [
       { site: "Site", link: "www.google.com" },
     ],
     image:
-      "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
+      "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png" || defaultImage,
   },
 ];
