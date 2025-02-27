@@ -6,7 +6,7 @@ import { Navbar, Footer } from "./components";
 
 function App() {
   return (
-    <div className="App min-w-svw min-h-svh flex flex-col bg-gradient-to-tr from-slate-900 to-neutral-500 bg-fixed "
+    <div className="App min-w-svw min-h-svh flex flex-col bg-gradient-to-tr from-slate-900 to-neutral-500 bg-fixed  overflow-y-hidden "
     >
       <Router>
         <Navbar />

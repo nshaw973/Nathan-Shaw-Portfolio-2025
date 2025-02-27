@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Contact = () => {
   return (
-    <div className="flex flex-grow justify-center">
+    <div className="flex flex-grow justify-center animate-fade animate-ease-out">
       <div className="w-9/12 m-6 bg-white rounded-xl">
       <h1 className="font-roboto text-2xl border-b-2 p-6">Feel free to reach me out in any of these platforms!</h1>
         <ul className="flex flex-col w-full pt-6">
