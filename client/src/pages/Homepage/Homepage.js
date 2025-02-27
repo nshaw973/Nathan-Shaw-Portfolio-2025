@@ -21,7 +21,7 @@ const Homepage = () => {
           </h1>
           <Link
             to={"/about"}
-            className="animate-fade animate-delay-[2000ms] btn rounded-xl btn-xs hover:bg-slate-700 hover:text-white border-none"
+            className="animate-fade animate-delay-[2000ms] btn rounded-xl btn-xs hover:bg-slate-700 hover:text-white border-none flex ml-auto mr-4 w-fit mt-4"
           >
             Go to About
           </Link>
