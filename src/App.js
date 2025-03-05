@@ -11,6 +11,7 @@ import { Navbar, Footer } from "./components";
 
 function App() {
   return (
+    <BrowserRouter basename={"/Nathan-Shaw-Portfolio-2025"}>
       <div className="App min-w-svw min-h-svh flex flex-col bg-gradient-to-tr from-slate-900 to-neutral-500 bg-fixed  overflow-y-hidden ">
         <Router>
           <Navbar />
@@ -26,6 +27,8 @@ function App() {
           <Footer />
         </Router>
       </div>
+    </BrowserRouter>
+
   );
 }
 
