@@ -1,4 +1,4 @@
-import { iconGithub, iconLinkedin, iconEmail } from "../images";
+import { iconGithub, iconLinkedin } from "../images";
 
 export const socials = [
   {

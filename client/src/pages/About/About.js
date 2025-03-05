@@ -2,15 +2,16 @@ import React from "react";
 import bgVsCode from "./aboutImages/bg.PNG";
 import { socials } from "../../utils/socials";
 import { Link } from "react-router-dom";
+import { aboutMe } from "./aboutForm";
 
 const About = () => {
   return (
     <div
-      className="flex flex-grow flex-col md:flex-row w-full animate-fade overflow-y-scroll"
-      style={{ height: "calc(100vh - 9rem)" }}
+      className="flex flex-grow flex-col md:flex-row w-full  overflow-y-scroll pt-4"
+      style={{ height: "calc(100vh - 8rem)" }}
     >
       <div
-        className="rounded-xl p-2 bg-white w-full md:w-1/2 min-h-48 h-full"
+        className="rounded-xl p-2 bg-white w-full md:w-1/2 min-h-48 h-full animate-fade"
         style={{
           backgroundImage: `url(${bgVsCode})`,
         }}
@@ -20,13 +21,7 @@ const About = () => {
           Hello! I'm Nathan Shaw
         </h1>
         <p className="text-left p-4">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          {aboutMe}
         </p>
         <div className="flex flex-row justify-center">
           {socials.map((social, index) => (

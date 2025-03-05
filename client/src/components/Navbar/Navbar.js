@@ -55,7 +55,7 @@ const Navbar = () => {
         </div>
         <br></br>
       </div>
-      <nav className="pb-4">
+      <nav className="">
         <div className="flex flex-row w-full justify-end text-sm">
           {tabs.map((tab, index) => {
             return (

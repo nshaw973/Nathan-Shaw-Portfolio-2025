@@ -1,12 +1,6 @@
 import React from "react";
-import { bgDarthStripe, iconGithub, iconLinkedin } from "../../images";
-import { Link } from "react-router-dom";
 
 const Footer = () => {
-  const socials = [
-    { link: "https://github.com/nshaw973", icon: iconGithub },
-    { link: "https://www.linkedin.com", icon: iconLinkedin },
-  ];
   return (
     <>
 {/*       <footer

@@ -4,7 +4,7 @@ import { projectList } from "./projectList";
 import { symbolJS, symbolPy } from "../../images";
 
 const Projects = () => {
-  const symbol = (lan) => {
+  const getSymbol = (lan) => {
     switch (lan) {
       case "Javascript":
         return symbolJS;
@@ -17,18 +17,18 @@ const Projects = () => {
   return (
     <>
       <div
-        className="flex flex-wrap overflow-y-scroll"
-        style={{ height: "calc(100vh - 9rem)" }}
+        className="flex flex-wrap overflow-y-scroll pt-4"
+        style={{ height: "calc(100vh - 8rem)" }}
       >
         {projectList.map((project, index) => {
           return (
             <div
-              className="flex flex-col w-full sm:w-1/2  xl:w-1/4 p-2 pr-1 text-sm animate-fade animate-ease-out
+              className="flex flex-col w-full sm:w-1/2 lg:w-1/3 p-2 pr-1 text-sm animate-fade animate-ease-out
             "
             >
               <img
                 src={project.image}
-                className="w-fit h-48 rounded-xl shadow-xl min-h-48 pt-2 ml-auto mr-auto"
+                className="h-24 rounded-xl shadow-xl min-h-48 ml-auto mr-auto"
                 alt={`${project.title}-cover`}
               ></img>
               <div className="w-full flex flex-col">
@@ -40,7 +40,7 @@ const Projects = () => {
                     <strong>Language:&nbsp;</strong>
                     <p>{project.language}</p>
                     <img
-                      src={symbol(project.language)}
+                      src={getSymbol(project.language)}
                       className="pl-2 h-4"
                       alt={`${project.language}-symbol`}
                     />

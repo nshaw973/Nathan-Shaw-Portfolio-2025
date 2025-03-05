@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { socials } from "../../utils/socials";
-import ReCAPTCHA from 'react-google-recaptcha';
 
 const Contact = () => {
   return (

@@ -1,4 +1,11 @@
-import { coverDiscordBot, coverGIF, coverTCGSite, coverLinks, coverVehicleCSVFeed } from "./images";
+import {
+  coverDiscordBot,
+  coverGIF,
+  coverTCGSite,
+  coverLinks,
+  coverVehicleCSVFeed,
+  coverPortfolio,
+} from "./images";
 const defaultImage =
   "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png";
 export const projectList = [
@@ -28,7 +35,7 @@ export const projectList = [
     technology: "Paramiko",
     deployment: "Local Program",
     about:
-    "This tool simplifies the Google Inventory Feed process by enabling users to add vehicles via an interactive command prompt. It prompts for essential vehicle details and automates SFTP uploads, streamlining inventory management with ease",
+      "This tool simplifies the Google Inventory Feed process by enabling users to add vehicles via an interactive command prompt. It prompts for essential vehicle details and automates SFTP uploads, streamlining inventory management with ease",
     links: [
       {
         site: "Github",
@@ -55,7 +62,8 @@ export const projectList = [
     technology:
       "MongoDB, Mongoose, Express, React, NodeJS, TailwindCSS, DaisyUI, GraphQL, bcrypt",
     deployment: "Heroku",
-    about: "This website is the backend component of the Discord Bot Application, designed to store and manage data from user-opened booster packs. Users can view their collections, add cards to a favorites list, and explore detailed information about the contents of each booster pack.",
+    about:
+      "This website is the backend component of the Discord Bot Application, designed to store and manage data from user-opened booster packs. Users can view their collections, add cards to a favorites list, and explore detailed information about the contents of each booster pack.",
     links: [
       { site: "Github", link: "https://github.com/nshaw973/tcg-prices" },
       {
@@ -70,7 +78,7 @@ export const projectList = [
     language: "Javascript",
     technology: "React, TailwindCSS, Github Pages",
     about:
-      "A compact application developed for Aero Mobility, consolidating their social media profiles and additional links into a single, user-friendly page. The app allows seamless switching between different company profiles, catering to the user's specific needs.",
+      "Welcome to my portfolio! You're currently viewing it, and through this platform, you'll have access to my code. This will give you insight into how I designed and structured this portfolio.",
     links: [
       { site: "Github", link: "https://github.com/aeromobility/links" },
       { site: "Site", link: "https://aeromobility.github.io/links/" },
@@ -78,14 +86,17 @@ export const projectList = [
     image: coverLinks || defaultImage,
   },
   {
-    title: "Connected",
-    about: "About this project",
+    title: "My Portfolio",
+    language: "Javascript",
+    technology: "React, TailwindCSS, Github Pages",
+    about:
+      "This is my portfolio, which is what is being currently viewed! You'll be able to access my code this way to get a view on how i structured this portfolio.",
     links: [
-      { site: "Github", link: "www.github.com" },
-      { site: "Site", link: "www.google.com" },
+      {
+        site: "Github",
+        link: "https://github.com/nshaw973/Nathan-Shaw-Portfolio-2025",
+      },
     ],
-    image:
-      "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png" ||
-      defaultImage,
+    image: coverPortfolio || defaultImage,
   },
 ];
