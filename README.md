@@ -1,6 +1,6 @@
 # Deployed Portfolio
 
-[Nathan Shaw Portfolio 2025](https://nshaw973.github.io/).
+[Nathan Shaw Portfolio 2025](https://nshaw973.github.io/Nathan-Shaw-Portfolio-2025/).
 
 # Getting Started with Create React App
 
