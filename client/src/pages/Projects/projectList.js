@@ -1,10 +1,15 @@
-import { coverDiscordBot, coverGIF, coverTCGSite, coverLinks } from "./images";
-const defaultImage = "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"
+import { coverDiscordBot, coverGIF, coverTCGSite, coverLinks, coverVehicleCSVFeed } from "./images";
+const defaultImage =
+  "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png";
 export const projectList = [
+  // Google Feed
   {
     title: "Google Inventory Feed",
+    language: "Javascript",
+    technology: "NodeJS, React, TailwindCSS, DaisyUI, Papaparse, Json2CSV",
+    deployment: "Heroku",
     about:
-      "An inventory feed created for Aero Mobility to upload and update their Vehicle inventory on their google page. \nUses csv files to upload through an sftp.",
+      "An inventory management system developed for Aero Mobility to seamlessly upload and update their vehicle inventory on their Google page. The system utilizes CSV files, which are transferred and processed via SFTP for efficient data handling.",
     links: [
       {
         site: "Github",
@@ -18,9 +23,27 @@ export const projectList = [
     image: coverGIF || defaultImage,
   },
   {
-    title: "TCG Discord Bot",
+    title: "Vehicle CSV Feed",
+    language: "Python",
+    technology: "Paramiko",
+    deployment: "Local Program",
     about:
-      "This bot is one part of a whole personal project. \nThis bot was created using a Pokemon Trading Card Game API to create a fake booster pack opening experience for discoord users. \nThis bot then connects to the Discord TCG Collection Website that logs all the users data, such as cards collected and their total collection worth.",
+    "This tool simplifies the Google Inventory Feed process by enabling users to add vehicles via an interactive command prompt. It prompts for essential vehicle details and automates SFTP uploads, streamlining inventory management with ease",
+    links: [
+      {
+        site: "Github",
+        link: "https://github.com/nshaw973/Vehicle-CSV-Generator",
+      },
+    ],
+    image: coverVehicleCSVFeed || defaultImage,
+  },
+  {
+    title: "TCG Discord Bot",
+    language: "Javascript",
+    technology: "PokemonTCGSDK API, Mongoose, Discord.js",
+    deployment: "Locally Hosted and installed in multiple Discord Servers",
+    about:
+      "This bot is part of a personal project that simulates a Pokémon TCG booster pack opening experience for Discord users, utilizing a Pokémon TCG API. It integrates with a Discord TCG Collection Website to log user data, including collected cards and total collection value.",
     links: [
       { site: "Github", link: "https://github.com/nshaw973/MyDiscord-Bot" },
     ],
@@ -28,8 +51,11 @@ export const projectList = [
   },
   {
     title: "TCG Collection Site",
-    about:
-      "This is the second part of the Discord Bot Application. \nThis is where all the data is stored based on the booster packs opened in discord by the user. \nCollections can be viewed and added to a favorites collection. \nThey are also able to look at what each booster contains as well.",
+    language: "Javascript",
+    technology:
+      "MongoDB, Mongoose, Express, React, NodeJS, TailwindCSS, DaisyUI, GraphQL, bcrypt",
+    deployment: "Heroku",
+    about: "This website is the backend component of the Discord Bot Application, designed to store and manage data from user-opened booster packs. Users can view their collections, add cards to a favorites list, and explore detailed information about the contents of each booster pack.",
     links: [
       { site: "Github", link: "https://github.com/nshaw973/tcg-prices" },
       {
@@ -41,8 +67,10 @@ export const projectList = [
   },
   {
     title: "Aero Mobility Social Links",
+    language: "Javascript",
+    technology: "React, TailwindCSS, Github Pages",
     about:
-      "Small application for Aero Mobility, that links their social media and any extra links into a single page. \nAble to switch between both companies depending on what the user is looking for.",
+      "A compact application developed for Aero Mobility, consolidating their social media profiles and additional links into a single, user-friendly page. The app allows seamless switching between different company profiles, catering to the user's specific needs.",
     links: [
       { site: "Github", link: "https://github.com/aeromobility/links" },
       { site: "Site", link: "https://aeromobility.github.io/links/" },
@@ -57,6 +85,7 @@ export const projectList = [
       { site: "Site", link: "www.google.com" },
     ],
     image:
-      "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png" || defaultImage,
+      "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png" ||
+      defaultImage,
   },
 ];

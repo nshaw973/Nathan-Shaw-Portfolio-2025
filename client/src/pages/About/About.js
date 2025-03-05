@@ -1,15 +1,14 @@
 import React from "react";
 import bgVsCode from "./aboutImages/bg.PNG";
-import { iconGithub, iconLinkedin } from "../../images";
+import { socials } from "../../utils/socials";
 import { Link } from "react-router-dom";
 
 const About = () => {
-  const socials = [
-    { link: "https://github.com/nshaw973", icon: iconGithub },
-    { link: "https://www.linkedin.com", icon: iconLinkedin },
-  ];
   return (
-    <div className="flex flex-grow flex-col md:flex-row m-12 w-full animate-fade">
+    <div
+      className="flex flex-grow flex-col md:flex-row w-full animate-fade overflow-y-scroll"
+      style={{ height: "calc(100vh - 9rem)" }}
+    >
       <div
         className="rounded-xl p-2 bg-white w-full md:w-1/2 min-h-48 h-full"
         style={{
@@ -20,7 +19,7 @@ const About = () => {
         <h1 className="text-xl border-b-2 m-4 pb-2 flex flex-start">
           Hello! I'm Nathan Shaw
         </h1>
-        <p>
+        <p className="text-left p-4">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut

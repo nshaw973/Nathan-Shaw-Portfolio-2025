@@ -1,23 +1,20 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { bgDarthStripe, iconGithub, iconLinkedin } from "../../images";
+import { bgDarthStripe} from "../../images";
+import { socials } from "../../utils/socials"
+
+const tabs = [
+  { name: "About", link: "/about" },
+  { name: "Projects", link: "/projects" },
+  { name: "Resume", link: "/resume" },
+  { name: "Contact", link: "/contact" },
+];
 
 const Navbar = () => {
   const [currentTab, setCurrentTab] = useState("Homepage");
   const [playFade, setPlayFade] = useState(false);
   const location = useLocation()
   const path = location.pathname
-  const tabs = [
-    { name: "About", link: "/about" },
-    { name: "Projects", link: "/projects" },
-    { name: "Resume", link: "/resume" },
-    { name: "Contact", link: "/contact" },
-  ];
-
-  const socials = [
-    { link: "https://github.com/nshaw973", icon: iconGithub },
-    { link: "https://www.linkedin.com", icon: iconLinkedin },
-  ];
 
   useEffect(() => {
     const matchedTab = tabs.find((tab) => tab.link === path);
@@ -42,7 +39,7 @@ const Navbar = () => {
           backgroundImage: `url(${bgDarthStripe})`,
         }}
       >
-        <Link to="/" className="m-auto ml-2 font-bold hover:invert">
+        <Link to="/" className="m-auto ml-2 font-bold">
           Nathan Shaw - 2025
         </Link>
         <div className="flex flex-row ml-auto">
@@ -58,7 +55,7 @@ const Navbar = () => {
         </div>
         <br></br>
       </div>
-      <nav>
+      <nav className="pb-4">
         <div className="flex flex-row w-full justify-end text-sm">
           {tabs.map((tab, index) => {
             return (
