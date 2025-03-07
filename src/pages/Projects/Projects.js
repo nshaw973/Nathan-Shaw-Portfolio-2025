@@ -26,11 +26,12 @@ const Projects = () => {
               className="flex flex-col w-full sm:w-1/2 lg:w-1/3 p-2 pr-1 text-sm animate-fade animate-ease-out
             "
             >
-              <img
-                src={project.image}
-                className="h-24 rounded-xl shadow-xl min-h-48 ml-auto mr-auto"
-                alt={`${project.title}-cover`}
-              ></img>
+                <img
+                  src={project.image}
+                  className="h-24 rounded-xl shadow-xl min-h-72 ml-auto mr-auto"
+                  alt={`${project.title}-cover`}
+
+                />
               <div className="w-full flex flex-col">
                 <strong className="rounded-xl bg-white mt-2 shadow">
                   {project.title}

@@ -7,7 +7,7 @@ import { aboutMe } from "./aboutForm";
 const About = () => {
   return (
     <div
-      className="flex flex-grow flex-col md:flex-row w-full  overflow-y-scroll pt-4"
+      className="flex flex-grow flex-col md:flex-row w-full  overflow-y-scroll pt-4 animate-fade"
       style={{ height: "calc(100vh - 8rem)" }}
     >
       <div

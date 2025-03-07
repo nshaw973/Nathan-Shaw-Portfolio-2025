@@ -6,11 +6,11 @@ import { Navbar, Footer } from "./components";
 
 function App() {
   // Set basename dynamically
-  const basename = process.env.NODE_ENV === 'production' ? '/Nathan-Shaw-Portfolio-2025' : '/';
+  const basename = '/Nathan-Shaw-Portfolio-2025'
 
   return (
     <BrowserRouter basename={basename}>
-      <div className="App min-w-svw min-h-svh flex flex-col bg-gradient-to-tr from-slate-900 to-neutral-500 bg-fixed overflow-y-hidden">
+      <div className="App min-w-svw min-h-svh flex flex-col bg-gradient-to-tr from-slate-900 to-neutral-500 bg-fixed overflow-y-hidden text-black">
         <Navbar />
         <div className="flex flex-grow w-full ml-auto mr-auto">
           <Routes>
