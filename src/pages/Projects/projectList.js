@@ -78,7 +78,7 @@ export const projectList = [
     language: "Javascript",
     technology: "React, TailwindCSS, Github Pages",
     about:
-      "Welcome to my portfolio! You're currently viewing it, and through this platform, you'll have access to my code. This will give you insight into how I designed and structured this portfolio.",
+      "A centralized platform for Aero Mobility clients, accessible via a bio link or QR code, that seamlessly directs users to a curated collection of essential links. These include the company website, social media profiles, and any other relevant resources, providing a convenient one-stop destination for information and engagement.",
     links: [
       { site: "Github", link: "https://github.com/aeromobility/links" },
       { site: "Site", link: "https://aeromobility.github.io/links/" },

@@ -1,5 +1,5 @@
 import React from "react";
-import basicResume from './pdf/basicResume.pdf';
+import basicResume from './pdf/nathan_shaw_resume_2025.pdf';
 
 const Resume = () => {
   return (
@@ -7,7 +7,7 @@ const Resume = () => {
       <iframe
         src={basicResume}
         className="w-11/12 h-full m-auto mb-4 mt-4 shadow-xl"
-        title="My PDF"
+        title="Nathan Shaw Resume 2025"
         style={{ border: "none" }}
         allowFullScreen
       />
