@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Nathan-Shaw-Portfolio-2025/static/css/main.81e464a0.css",
-    "main.js": "/Nathan-Shaw-Portfolio-2025/static/js/main.10fbc83b.js",
+    "main.js": "/Nathan-Shaw-Portfolio-2025/static/js/main.790035c2.js",
     "static/js/453.419a5d54.chunk.js": "/Nathan-Shaw-Portfolio-2025/static/js/453.419a5d54.chunk.js",
     "static/media/coverLinks.PNG": "/Nathan-Shaw-Portfolio-2025/static/media/coverLinks.7f25dbc2e0b42f6e7cc1.PNG",
     "static/media/coverTCGSite.PNG": "/Nathan-Shaw-Portfolio-2025/static/media/coverTCGSite.ebe72ea0b178f1b3a8d0.PNG",
@@ -61,11 +61,11 @@
     "index.html": "/Nathan-Shaw-Portfolio-2025/index.html",
     "static/media/iconEmail.svg": "/Nathan-Shaw-Portfolio-2025/static/media/iconEmail.547e1b6f2cda4354da5dab0349b01417.svg",
     "main.81e464a0.css.map": "/Nathan-Shaw-Portfolio-2025/static/css/main.81e464a0.css.map",
-    "main.10fbc83b.js.map": "/Nathan-Shaw-Portfolio-2025/static/js/main.10fbc83b.js.map",
+    "main.790035c2.js.map": "/Nathan-Shaw-Portfolio-2025/static/js/main.790035c2.js.map",
     "453.419a5d54.chunk.js.map": "/Nathan-Shaw-Portfolio-2025/static/js/453.419a5d54.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.81e464a0.css",
-    "static/js/main.10fbc83b.js"
+    "static/js/main.790035c2.js"
   ]
 }
