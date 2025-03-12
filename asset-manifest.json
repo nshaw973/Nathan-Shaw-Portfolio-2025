@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Nathan-Shaw-Portfolio-2025/static/css/main.81e464a0.css",
-    "main.js": "/Nathan-Shaw-Portfolio-2025/static/js/main.72721a5b.js",
+    "main.css": "/Nathan-Shaw-Portfolio-2025/static/css/main.34deb7dd.css",
+    "main.js": "/Nathan-Shaw-Portfolio-2025/static/js/main.7def5b44.js",
     "static/js/453.419a5d54.chunk.js": "/Nathan-Shaw-Portfolio-2025/static/js/453.419a5d54.chunk.js",
     "static/media/coverLinks.PNG": "/Nathan-Shaw-Portfolio-2025/static/media/coverLinks.7f25dbc2e0b42f6e7cc1.PNG",
     "static/media/coverTCGSite.PNG": "/Nathan-Shaw-Portfolio-2025/static/media/coverTCGSite.ebe72ea0b178f1b3a8d0.PNG",
-    "static/media/basicResume.pdf": "/Nathan-Shaw-Portfolio-2025/static/media/basicResume.90503290832c5ab8ed40.pdf",
     "static/media/coverGIF.png": "/Nathan-Shaw-Portfolio-2025/static/media/coverGIF.fbbd553ecfdbbb95b761.png",
     "static/media/coverPortfolio.PNG": "/Nathan-Shaw-Portfolio-2025/static/media/coverPortfolio.5a844c0f5a6595e185c1.PNG",
     "static/media/coverDiscordBot.PNG": "/Nathan-Shaw-Portfolio-2025/static/media/coverDiscordBot.e3a65c1d6797d1e86af9.PNG",
     "static/media/darth-stripe.png": "/Nathan-Shaw-Portfolio-2025/static/media/darth-stripe.8e67525e26d85a351ff9.png",
+    "static/media/nathan_shaw_resume_2025.pdf": "/Nathan-Shaw-Portfolio-2025/static/media/nathan_shaw_resume_2025.422b86223c4ea6a03935.pdf",
     "static/media/py.png": "/Nathan-Shaw-Portfolio-2025/static/media/py.4bf914cb7d3451960262.png",
     "static/media/bgCode.PNG": "/Nathan-Shaw-Portfolio-2025/static/media/bgCode.9e581cc4a16a0b2f3090.PNG",
     "static/media/bg.PNG": "/Nathan-Shaw-Portfolio-2025/static/media/bg.c9ff34a0b86acb3cefec.PNG",
@@ -50,8 +50,8 @@
     "static/media/roboto-vietnamese-400-normal.woff": "/Nathan-Shaw-Portfolio-2025/static/media/roboto-vietnamese-400-normal.0dc97c66f9b542d6fa17.woff",
     "static/media/roboto-vietnamese-500-normal.woff": "/Nathan-Shaw-Portfolio-2025/static/media/roboto-vietnamese-500-normal.23b7b8a2524d2d4b637b.woff",
     "static/media/roboto-vietnamese-700-normal.woff": "/Nathan-Shaw-Portfolio-2025/static/media/roboto-vietnamese-700-normal.35ed0597568ff6f19c16.woff",
-    "static/media/iconLinkedin.svg": "/Nathan-Shaw-Portfolio-2025/static/media/iconLinkedin.f6082e0c420275f7e7b58bac81c0def9.svg",
-    "static/media/iconGithub.svg": "/Nathan-Shaw-Portfolio-2025/static/media/iconGithub.077a3fdbee9cbcbfd1a2d29bb167cece.svg",
+    "static/media/iconLinkedin.svg": "/Nathan-Shaw-Portfolio-2025/static/media/iconLinkedin.44906b3d6741f28a922941668a2ed244.svg",
+    "static/media/iconGithub.svg": "/Nathan-Shaw-Portfolio-2025/static/media/iconGithub.5531be85d7a8d6f333e5c7136944a022.svg",
     "static/media/roboto-greek-ext-500-normal.woff2": "/Nathan-Shaw-Portfolio-2025/static/media/roboto-greek-ext-500-normal.4a96ba31abcce0f5d52b.woff2",
     "static/media/roboto-greek-ext-400-normal.woff2": "/Nathan-Shaw-Portfolio-2025/static/media/roboto-greek-ext-400-normal.1df4abad55796d11a0c8.woff2",
     "static/media/roboto-greek-ext-700-normal.woff2": "/Nathan-Shaw-Portfolio-2025/static/media/roboto-greek-ext-700-normal.2dd6febad11502dec6a6.woff2",
@@ -60,12 +60,12 @@
     "static/media/roboto-greek-ext-400-normal.woff": "/Nathan-Shaw-Portfolio-2025/static/media/roboto-greek-ext-400-normal.16eb83b4a3b1ea994243.woff",
     "index.html": "/Nathan-Shaw-Portfolio-2025/index.html",
     "static/media/iconEmail.svg": "/Nathan-Shaw-Portfolio-2025/static/media/iconEmail.547e1b6f2cda4354da5dab0349b01417.svg",
-    "main.81e464a0.css.map": "/Nathan-Shaw-Portfolio-2025/static/css/main.81e464a0.css.map",
-    "main.72721a5b.js.map": "/Nathan-Shaw-Portfolio-2025/static/js/main.72721a5b.js.map",
+    "main.34deb7dd.css.map": "/Nathan-Shaw-Portfolio-2025/static/css/main.34deb7dd.css.map",
+    "main.7def5b44.js.map": "/Nathan-Shaw-Portfolio-2025/static/js/main.7def5b44.js.map",
     "453.419a5d54.chunk.js.map": "/Nathan-Shaw-Portfolio-2025/static/js/453.419a5d54.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.81e464a0.css",
-    "static/js/main.72721a5b.js"
+    "static/css/main.34deb7dd.css",
+    "static/js/main.7def5b44.js"
   ]
 }
