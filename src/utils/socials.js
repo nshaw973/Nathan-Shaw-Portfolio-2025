@@ -3,7 +3,7 @@ import { iconGithub, iconLinkedin } from "../images";
 export const socials = [
   {
     link: "https://www.linkedin.com/in/nathan-shaw-00284a282",
-    text: "nshaw973",
+    text: "Nathan Shaw",
     title: "LinkedIn",
     icon: iconLinkedin,
   },
